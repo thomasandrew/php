@@ -3,6 +3,10 @@
     <br>
     <input type="text" name="two" id="" placeholder="valor do jantar">
     <br>
+    <input type="text" name="three" id="" placeholder="Pizza">
+    <br>
+    <input type="text" name="four" id="" placeholder="Pessoa">
+    <br>
     <input type="submit" value="Press">
 </form>
 
@@ -17,3 +21,10 @@ $price = $_GET["two"];
 $gorgeta = $price * 0.1;
 $total = $price + $gorgeta;
 print '<br>O valor total é: ' . $total . ' e gorgeta ' . $gorgeta;
+
+// 3)Elaborar um programa para uma pizzaria, o qual leia o valor total de uma conta e quantos vão paga-la. Calcule e informe o valor a ser pago por cliente.
+$valor = $_GET["three"];
+$cliente = $_GET["four"];
+$valor /= $cliente;
+echo "<br><br>O valor que cada pessoa vai pagar é {$total}";
+
