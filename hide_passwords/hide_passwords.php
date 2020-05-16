@@ -13,7 +13,7 @@ class Connection {
                 $config['options']
             ); 
             
-       } catch(PDOExeption $e) {
+       } catch(PDOException $e) {
             die($e->getMessage()); 
        }
 
